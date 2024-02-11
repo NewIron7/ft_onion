@@ -31,3 +31,7 @@ ft_onion simplifies the deployment of web services on the Tor network using Dock
 This project is fully containerized, requiring only Docker to run. It includes:
 - A Docker image encapsulating the Tor service and web server.
 - Automated scripts for easy build and deployment.
+
+## Personnalize your onion address
+
+https://www.bentasker.co.uk/posts/documentation/linux/708-generating-a-vanity-address-for-version-3-onions.html
