@@ -16,15 +16,9 @@ ft_onion simplifies the deployment of web services on the Tor network using Dock
    - `git clone https://github.com/NewIron7/ft_onion`
    - `cd ft_onion`
 
-2. **Environment Setup:**
-   - Create a `.env` file based on the `example.env` provided in the repository.
-
-3. **Build and Run with Docker:**
+2. **Build and Run with Docker:**
    - Simply run `make` in the project directory. This command will build the Docker image and start the service automatically.
    - To access the web service, run `make logs` to reveal the onion address of your site.
-
-4. **SSH Access:**
-   - An SSH port is opened on `4242` for the user specified in the .env file.
 
 ## Dockerized Environment
 

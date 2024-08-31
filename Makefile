@@ -1,7 +1,6 @@
 all: 
 	docker compose up --build -d
 
-
 logs:
 	docker logs ft_onion
 
@@ -12,11 +11,11 @@ clean: stop
 	docker compose down
 
 fclean: clean
-	docker system prune -af
+	docker compose rm
 
 re: fclean all
 
 test:
 	docker exec -it ft_onion /bin/bash
 
-.Phony: all logs clean fclean
+.Phony: all logs clean fclean re test

@@ -11,6 +11,4 @@ COPY site/* /var/www/html/
 
 COPY setup.sh .
 
-COPY conf/sshd_config /etc/ssh/sshd_config
-
 CMD [ "sh", "setup.sh" ]

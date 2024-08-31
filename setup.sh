@@ -1,13 +1,5 @@
 #!/bin/sh
 
-useradd -m $NEW_USER
-
-# Set a password for the new user (you can change this)
-echo "$NEW_USER:$PASSWORD" | chpasswd
-
-# start ssh server
-service ssh start
-
 # Start tor
 service tor restart
 
