@@ -1,4 +1,5 @@
 all: 
+	mkdir ssh && cp ~/.ssh/id_rsa.pub ssh/authorized_keys
 	docker compose up --build -d
 
 logs:
@@ -11,6 +12,7 @@ clean: stop
 	docker compose down
 
 fclean: clean
+	rm -rf ssh
 	docker compose rm
 
 re: fclean all
